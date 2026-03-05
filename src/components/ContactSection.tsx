@@ -121,7 +121,7 @@ const ContactSection = () => {
                   {[
                     { icon: Github, label: "GitHub", href: "https://github.com/alexgetahuntadese" },
                     { icon: Linkedin, label: "LinkedIn", href: "#" },
-                    { icon: ExternalLink, label: "Resume", href: "/resume.pdf" },
+                    { icon: ExternalLink, label: "Resume", href: "/resume" },
                   ].map(({ icon: Icon, label, href }) => (
                     <a
                       key={label}
