@@ -29,7 +29,7 @@ const ContactSection = () => {
           transition={{ duration: 0.7, delay: 0.1 }}
         >
           <a
-            href="mailto:alexgetahuntadese@gmail.com"
+            href="mailto:alexgetahuntadese@gmail.com?subject=Hello%20Alexander&body=Hi%20Alexander,%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20love%20to%20connect.%0A%0ABest%20regards"
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium text-sm hover:opacity-90 transition-opacity"
           >
             <Mail className="w-4 h-4" />
@@ -52,6 +52,8 @@ const ContactSection = () => {
             <a
               key={label}
               href={href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               <Icon className="w-4 h-4" />

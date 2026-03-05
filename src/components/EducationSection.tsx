@@ -46,7 +46,7 @@ const EducationSection = () => {
 
           <div className="mt-6 flex flex-wrap gap-4">
             <div className="bg-secondary rounded-lg px-4 py-3 text-center">
-              <p className="font-display text-2xl font-bold text-foreground">3.25</p>
+              <p className="font-display text-2xl font-bold text-foreground">3.65</p>
               <p className="text-[10px] font-mono text-muted-foreground uppercase tracking-wider mt-0.5">GPA</p>
             </div>
             <div className="bg-secondary rounded-lg px-4 py-3">
