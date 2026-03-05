@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, ExternalLink, Send } from "lucide-react";
 import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
 
 const ContactSection = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const { toast } = useToast();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -12,6 +14,11 @@ const ContactSection = () => {
       `Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`
     );
     window.open(`mailto:alexgetahuntadese@gmail.com?subject=${subject}&body=${body}`, "_self");
+    toast({
+      title: "Email client opened!",
+      description: "Complete sending your message in your email app.",
+    });
+    setForm({ name: "", email: "", message: "" });
   };
 
   return (
